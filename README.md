@@ -41,18 +41,20 @@ The read/write operation between user space and kernel space is implemented usin
 
 ### Source code structure
 
-* cpciEpicsApp/kernelModule/pci_driver_llrf/pci_driver_llrf.c: Linux kernel module for PCI devices
-* cpciEpicsApp/kernelModule/pci_driver_llrf/pci_driver_llrf.h
-* cpciEpicsApp/kernelModule/pci_driver_llrf/test.c: A customized command-line tool to test PCI register access
-* cpciEpicsApp/iocBoot/iocCpciApp/st.cmd
-* cpciEpicsApp/cpciApp/cpciLLRF.db
-* cpciEpicsApp/cpciApp/opi/llrf.bob
-* cpciEpicsApp/cpciApp/src/cpciAccess.c: User-space API for Linux kernel module
-* cpciEpicsApp/cpciApp/src/cpciAccess.h
-* cpciEpicsApp/cpciApp/src/cpciDefs.h: Data structure and ioctl() command definitions
-* cpciEpicsApp/cpciApp/src/cpciLLRF.cpp: EPICS driver support using asynPortDriver
-* cpciEpicsApp/cpciApp/src/cpciLLRF.h
-* cpciEpicsApp/cpciApp/src/cpciLLRF.dbd
+```
+cpciEpicsApp/kernelModule/pci_driver_llrf/pci_driver_llrf.c: Linux kernel module for PCI devices
+cpciEpicsApp/kernelModule/pci_driver_llrf/pci_driver_llrf.h
+cpciEpicsApp/kernelModule/pci_driver_llrf/test.c: A customized command-line tool to test PCI register access
+cpciEpicsApp/iocBoot/iocCpciApp/st.cmd
+cpciEpicsApp/cpciApp/cpciLLRF.db
+cpciEpicsApp/cpciApp/opi/llrf.bob
+cpciEpicsApp/cpciApp/src/cpciAccess.c: User-space API for Linux kernel module
+cpciEpicsApp/cpciApp/src/cpciAccess.h
+cpciEpicsApp/cpciApp/src/cpciDefs.h: Data structure and ioctl() command definitions
+cpciEpicsApp/cpciApp/src/cpciLLRF.cpp: EPICS driver support using asynPortDriver
+cpciEpicsApp/cpciApp/src/cpciLLRF.h
+cpciEpicsApp/cpciApp/src/cpciLLRF.dbd
+```
 
 ### Architecture
 
