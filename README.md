@@ -1,4 +1,4 @@
-# A simple EPICS driver example for PCI devices on Linux using asynPortDriver
+# A simple EPICS driver example for PCI devices using asynPortDriver on Linux
 
 This is an EPICS IOC developed for the LLRF system of a small-scale accelerator facility at CSNS. The LLRF board is a customized cPCI FPGA board with PCI 9056 bridge, the control interface is register access and waveform read with 1 second update period, no interrupt or DMA is needed.
 
