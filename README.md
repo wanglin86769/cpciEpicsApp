@@ -2,7 +2,7 @@
 
 This is an EPICS IOC developed for the LLRF system of a small-scale accelerator facility at CSNS. The LLRF board is a customized cPCI FPGA board with PCI 9056 bridge, the control interface is register access and waveform read with 1 second update period, no interrupt or DMA is needed.
 
-## User case
+## Use case
 
 This example is only useful for simple customized PCI devices that does not need interrupt and DMA, and only one MMIO (Memory mapped I/O) BAR in used to access the FPGA registers.
 
