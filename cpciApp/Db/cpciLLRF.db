@@ -1,0 +1,2007 @@
+############################################################################################
+#############################    Read / Write registers    #################################
+############################################################################################
+
+
+###################################################################
+#  Interlock enabling                                             # 
+#  1: Enable                                                      #
+#  0: Mask                                                        #
+###################################################################
+record(bo, "$(SYS):$(SUB)::lock_en")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) lock_en")
+    field(ZNAM, "Mask")
+    field(ONAM, "Enable")
+}
+
+record(bi, "$(SYS):$(SUB)::lock_en-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) lock_en")
+    field(ZNAM, "Mask")
+    field(ONAM, "Enable")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  On / Off switch	                                          	  # 
+#  1: On                                                          #
+#  0: Off                                                         #
+###################################################################
+record(bo, "$(SYS):$(SUB)::on_off")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) on_off")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+}
+
+record(bi, "$(SYS):$(SUB)::on_off-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) on_off")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  1: Continuous                                                  #
+#  0: Pulse                                                       #
+###################################################################
+record(bo, "$(SYS):$(SUB)::RF_PW_CW")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) RF_PW_CW")
+    field(ZNAM, "Pulse")
+    field(ONAM, "Continuous")
+}
+
+record(bi, "$(SYS):$(SUB)::RF_PW_CW-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) RF_PW_CW")
+    field(ZNAM, "Pulse")
+    field(ONAM, "Continuous")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  1: Close                                                  #
+#  0: Open                                                       #
+###################################################################
+record(bo, "$(SYS):$(SUB)::loop_en")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) loop_en")
+    field(ZNAM, "Open")
+    field(ONAM, "Close")
+}
+
+record(bi, "$(SYS):$(SUB)::loop_en-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) loop_en")
+    field(ZNAM, "Open")
+    field(ONAM, "Close")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  1: Automatic                                                  #
+#  0: Manual                                                       #
+###################################################################
+record(bo, "$(SYS):$(SUB)::tune_loop_en")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) tune_loop_en")
+    field(ZNAM, "Manual")
+    field(ONAM, "Automatic")
+}
+
+record(bi, "$(SYS):$(SUB)::tune_loop_en-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) tune_loop_en")
+    field(ZNAM, "Manual")
+    field(ONAM, "Automatic")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Set point amplitude					                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::sp_amp")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) sp_amp")
+}
+
+record(longin, "$(SYS):$(SUB)::sp_amp-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) sp_amp")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Set point phase					                              #
+###################################################################
+record(ao, "$(SYS):$(SUB)::sp_phase")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) sp_phase")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::sp_phase-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) sp_phase")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Beam feedforward amplitude					                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::beam_amp")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) beam_amp")
+}
+
+record(longin, "$(SYS):$(SUB)::beam_amp-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) beam_amp")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Beam feedforward phase					                      #
+###################################################################
+record(ao, "$(SYS):$(SUB)::beam_phase")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) beam_phase")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::beam_phase-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) beam_phase")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  kp					                                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::kp")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) kp")
+}
+
+record(longin, "$(SYS):$(SUB)::kp-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) kp")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  ki               					                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::ki")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) ki")
+}
+
+record(longin, "$(SYS):$(SUB)::ki-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) ki")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Input amplitude calibration coefficient					      #
+###################################################################
+record(ao, "$(SYS):$(SUB)::ad_adj_real")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) ad_adj_real")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::ad_adj_real-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) ad_adj_real")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Input phase calibration coefficient					          #
+###################################################################
+record(ao, "$(SYS):$(SUB)::ad_adj_imag")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) ad_adj_imag")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::ad_adj_imag-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) ad_adj_imag")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Input amplitude calibration coefficient 1					  #
+###################################################################
+record(ao, "$(SYS):$(SUB)::da_adj_real")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) da_adj_real")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::da_adj_real-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) da_adj_real")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Input phase calibration coefficient 1					      #
+###################################################################
+record(ao, "$(SYS):$(SUB)::da_adj_imag")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) da_adj_imag")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::da_adj_imag-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) da_adj_imag")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Input amplitude calibration coefficient 2					  #
+###################################################################
+record(ao, "$(SYS):$(SUB)::da_adj_real2")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) da_adj_real2")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::da_adj_real2-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) da_adj_real2")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Input phase calibration coefficient 2					      #
+###################################################################
+record(ao, "$(SYS):$(SUB)::da_adj_imag2")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) da_adj_imag2")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::da_adj_imag2-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) da_adj_imag2")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Curve interval point					                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::n_jump")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) n_jump")
+}
+
+record(longin, "$(SYS):$(SUB)::n_jump-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) n_jump")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Curve delay time					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::n_jump_delay")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) n_jump_delay")
+}
+
+record(longin, "$(SYS):$(SUB)::n_jump_delay-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) n_jump_delay")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Frequency calculation start point					          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::start_cnt")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) start_cnt")
+}
+
+record(longin, "$(SYS):$(SUB)::start_cnt-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) start_cnt")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Frequency calculation end point					              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::end_cnt")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) end_cnt")
+}
+
+record(longin, "$(SYS):$(SUB)::end_cnt-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) end_cnt")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Out_max_I					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Out_max_I")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Out_max_I")
+}
+
+record(longin, "$(SYS):$(SUB)::Out_max_I-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Out_max_I")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Out_min_I					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Out_min_I")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Out_min_I")
+}
+
+record(longin, "$(SYS):$(SUB)::Out_min_I-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Out_min_I")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Out_max_Q					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Out_max_Q")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Out_max_Q")
+}
+
+record(longin, "$(SYS):$(SUB)::Out_max_Q-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Out_max_Q")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Out_min_Q					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Out_min_Q")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Out_min_Q")
+}
+
+record(longin, "$(SYS):$(SUB)::Out_min_Q-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Out_min_Q")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  off-resonance frequency					                      #
+###################################################################
+record(longout, "$(SYS):$(SUB)::sp_freq")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) sp_freq")
+}
+
+record(longin, "$(SYS):$(SUB)::sp_freq-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) sp_freq")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Loop delay count					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Loop_Delay_count")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Loop_Delay_count")
+}
+
+record(longin, "$(SYS):$(SUB)::Loop_Delay_count-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Loop_Delay_count")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Kip_start_point					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Kip_start_point")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Kip_start_point")
+}
+
+record(longin, "$(SYS):$(SUB)::Kip_start_point-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Kip_start_point")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Kip_end_point					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Kip_end_point")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Kip_end_point")
+}
+
+record(longin, "$(SYS):$(SUB)::Kip_end_point-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Kip_end_point")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Ki_I_rise_point					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Ki_I_rise_point")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ki_I_rise_point")
+}
+
+record(longin, "$(SYS):$(SUB)::Ki_I_rise_point-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ki_I_rise_point")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Ki_Q_rise_point					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Ki_Q_rise_point")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ki_Q_rise_point")
+}
+
+record(longin, "$(SYS):$(SUB)::Ki_Q_rise_point-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ki_Q_rise_point")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  freq_kp					                                      #
+###################################################################
+record(longout, "$(SYS):$(SUB)::freq_kp")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) freq_kp")
+}
+
+record(longin, "$(SYS):$(SUB)::freq_kp-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) freq_kp")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Beam feed forward delay					                      #
+###################################################################
+record(longout, "$(SYS):$(SUB)::beam_delay")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) beam_delay")
+}
+
+record(longin, "$(SYS):$(SUB)::beam_delay-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) beam_delay")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  rfgate_ram_jiange					                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::rfgate_ram_jiange")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) rfgate_ram_jiange")
+}
+
+record(longin, "$(SYS):$(SUB)::rfgate_ram_jiange-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) rfgate_ram_jiange")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Preset Q value					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Qset")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Qset")
+}
+
+record(longin, "$(SYS):$(SUB)::Qset-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Qset")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Over drive					                                  #
+###################################################################
+record(ao, "$(SYS):$(SUB)::Overdrive")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Overdrive")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::Overdrive-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Overdrive")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Set point mode					                              #
+#  1: Cold cavity preheating
+#  2: Manually deliver the setting amplitude
+#  3: Automaticly tact
+###################################################################
+record(mbbo, "$(SYS):$(SUB)::train_mode")  {
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) train_mode")
+    field(ZRVL, "1")
+    field(ONVL, "2")
+    field(TWVL, "3")
+    field(ZRST, "Preheat")
+    field(ONST, "Manual")
+    field(TWST, "Automatic")
+}
+
+record(mbbi, "$(SYS):$(SUB)::train_mode-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) train_mode")
+    field(ZRVL, "1")
+    field(ONVL, "2")
+    field(TWVL, "3")
+    field(ZRST, "Preheat")
+    field(ONST, "Manual")
+    field(TWST, "Automatic")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Trigger source					                              #
+#  1. Internal                                                    #  
+#  0. External                                                    #
+###################################################################
+record(bo, "$(SYS):$(SUB)::triger_src")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) triger_src")
+    field(ZNAM, "External")
+    field(ONAM, "Internal")
+}
+
+record(bi, "$(SYS):$(SUB)::triger_src-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) triger_src")
+    field(ZNAM, "External")
+    field(ONAM, "Internal")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  triger_period					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::triger_period")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) triger_period")
+}
+
+record(longin, "$(SYS):$(SUB)::triger_period-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) triger_period")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  RF_count					                                      #
+###################################################################
+record(longout, "$(SYS):$(SUB)::RF_count")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) RF_count")
+}
+
+record(longin, "$(SYS):$(SUB)::RF_count-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) RF_count")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Initial setting point					                      #
+###################################################################
+record(longout, "$(SYS):$(SUB)::init_set")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) init_set")
+}
+
+record(longin, "$(SYS):$(SUB)::init_set-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) init_set")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Target setting point					                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::end_set")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) end_set")
+}
+
+record(longin, "$(SYS):$(SUB)::end_set-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) end_set")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Powerup time					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::powup_time")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powup_time")
+}
+
+record(longin, "$(SYS):$(SUB)::powup_time-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powup_time")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Powerup step					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::powup_step")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powup_step")
+}
+
+record(longin, "$(SYS):$(SUB)::powup_step-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powup_step")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Full power hold time					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::powup_hold_time")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powup_hold_time")
+}
+
+record(longin, "$(SYS):$(SUB)::powup_hold_time-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powup_hold_time")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Power up threshold					                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::powup_protect_times")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powup_protect_times")
+}
+
+record(longin, "$(SYS):$(SUB)::powup_protect_times-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powup_protect_times")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Power down time					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::powdown_time")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powdown_time")
+}
+
+record(longin, "$(SYS):$(SUB)::powdown_time-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powdown_time")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Power down step					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::powdown_step")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powdown_step")
+}
+
+record(longin, "$(SYS):$(SUB)::powdown_step-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powdown_step")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Low power hold time					                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::powdown_hold_time")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powdown_hold_time")
+}
+
+record(longin, "$(SYS):$(SUB)::powdown_hold_time-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powdown_hold_time")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Power down threshold					                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::powdown_protect_times")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powdown_protect_times")
+}
+
+record(longin, "$(SYS):$(SUB)::powdown_protect_times-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) powdown_protect_times")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Protection start time					                      #
+###################################################################
+record(longout, "$(SYS):$(SUB)::PRT_Start_count")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) PRT_Start_count")
+}
+
+record(longin, "$(SYS):$(SUB)::PRT_Start_count-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) PRT_Start_count")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Protection end time					                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::PRT_End_count")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) PRT_End_count")
+}
+
+record(longin, "$(SYS):$(SUB)::PRT_End_count-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) PRT_End_count")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  VSWR1 threshold					                              #
+###################################################################
+record(ao, "$(SYS):$(SUB)::SP_P")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) SP_P")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::SP_P-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) SP_P")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  VSWR2 threshold					                              #
+###################################################################
+record(ao, "$(SYS):$(SUB)::SP_P_1")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) SP_P_1")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::SP_P_1-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) SP_P_1")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  VSWR3 threshold					                              #
+###################################################################
+record(ao, "$(SYS):$(SUB)::SP_P_2")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) SP_P_2")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::SP_P_2-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) SP_P_2")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  VSWR4 threshold					                              #
+###################################################################
+record(ao, "$(SYS):$(SUB)::SP_P_3")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) SP_P_3")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::SP_P_3-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) SP_P_3")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Beam power threshold					                          #
+###################################################################
+record(longout, "$(SYS):$(SUB)::Ch_beam_Hold")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ch_beam_Hold")
+}
+
+record(longin, "$(SYS):$(SUB)::Ch_beam_Hold-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ch_beam_Hold")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  VSWR threshold					                              #
+###################################################################
+record(ao, "$(SYS):$(SUB)::Ch_VSWR_Hold")
+{
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ch_VSWR_Hold")
+    field(PREC, "3")
+}
+
+record(ai, "$(SYS):$(SUB)::Ch_VSWR_Hold-RB")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ch_VSWR_Hold")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Number of permanent blocks					                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::SP_Ch_sum_PRT_Num")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) SP_Ch_sum_PRT_Num")
+}
+
+record(longin, "$(SYS):$(SUB)::SP_Ch_sum_PRT_Num-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) SP_Ch_sum_PRT_Num")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Manual clear the permanent blocks                              # 
+#  Clear flow: write 1 -> write 0                                 #
+###################################################################
+record(bo, "$(SYS):$(SUB)::manual_Clear")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) manual_Clear")
+    field(ZNAM, "Initial")
+    field(ONAM, "Clear")
+    info(asyn:READBACK, "1")
+}
+
+record(bi, "$(SYS):$(SUB)::manual_Clear-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) manual_Clear")
+    field(ZNAM, "Initial")
+    field(ONAM, "Clear")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  VSWR enable and beampower enable					              #
+#  0: Both disable
+#  1: VSWR enable
+#  2: beampower enable
+#  3: Both enable
+###################################################################
+record(mbbo, "$(SYS):$(SUB)::VSWR_EN")  {
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) VSWR_EN")
+    field(ZRVL, "0")
+    field(ONVL, "1")
+    field(TWVL, "2")
+    field(THVL, "3")
+    field(ZRST, "Both Disable")
+    field(ONST, "VSWR Enable")
+    field(TWST, "Beampower Enable")
+    field(THST, "Both Enable")
+}
+
+record(mbbi, "$(SYS):$(SUB)::VSWR_EN-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) VSWR_EN")
+    field(ZRVL, "0")
+    field(ONVL, "1")
+    field(TWVL, "2")
+    field(THVL, "3")
+    field(ZRST, "Both Disable")
+    field(ONST, "VSWR Enable")
+    field(TWST, "Beampower Enable")
+    field(THST, "Both Enable")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  VSWR_Delay_Num					                              #
+###################################################################
+record(longout, "$(SYS):$(SUB)::VSWR_Delay_Num")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) VSWR_Delay_Num")
+}
+
+record(longin, "$(SYS):$(SUB)::VSWR_Delay_Num-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) VSWR_Delay_Num")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#   k0_forward            					                      #
+###################################################################
+record(longout, "$(SYS):$(SUB)::k0_forward")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k0_forward")
+}
+
+record(longin, "$(SYS):$(SUB)::k0_forward-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k0_forward")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  k0_reverse					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::k0_reverse")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k0_reverse")
+}
+
+record(longin, "$(SYS):$(SUB)::k0_reverse-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k0_reverse")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  k1_forward					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::k1_forward")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k1_forward")
+}
+
+record(longin, "$(SYS):$(SUB)::k1_forward-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k1_forward")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  k1_reverse					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::k1_reverse")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k1_reverse")
+}
+
+record(longin, "$(SYS):$(SUB)::k1_reverse-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k1_reverse")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  k2_forward					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::k2_forward")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k2_forward")
+}
+
+record(longin, "$(SYS):$(SUB)::k2_forward-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k2_forward")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  k2_reverse					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::k2_reverse")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k2_reverse")
+}
+
+record(longin, "$(SYS):$(SUB)::k2_reverse-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k2_reverse")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  k3_forward					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::k3_forward")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k3_forward")
+}
+
+record(longin, "$(SYS):$(SUB)::k3_forward-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k3_forward")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  k3_reverse					                                  #
+###################################################################
+record(longout, "$(SYS):$(SUB)::k3_reverse")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k3_reverse")
+}
+
+record(longin, "$(SYS):$(SUB)::k3_reverse-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) k3_reverse")
+    field(SCAN, "1 second")
+}
+
+
+############################################################################################
+###############################    Read-only registers    ##################################
+############################################################################################
+
+
+###################################################################
+#  Whether CPU can read waveform					              #
+#  1: Can read                                                    #
+#  0: Cannot read                                                 #
+###################################################################
+record(bi, "$(SYS):$(SUB)::rd_reg_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) rd_reg_state")
+    field(ZNAM, "Disabled")
+    field(ONAM, "Enabled")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Interlock enable				                                  #
+#  1: Enabled                                                     #
+#  0: Mask                                                        #
+###################################################################
+record(bi, "$(SYS):$(SUB)::lock_en_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) lock_en_state")
+    field(ZNAM, "Disabled")
+    field(ONAM, "Enabled")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  RF on/off status  					                          #
+#  1: on                                                          #
+#  0: off                                                         #
+###################################################################
+record(bi, "$(SYS):$(SUB)::on_off_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) on_off_state")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Closed loop enable       					                  #
+#  1: Closed                                                      #
+#  0: Open                                                        #
+###################################################################
+record(bi, "$(SYS):$(SUB)::loop_en_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) loop_en_state")
+    field(ZNAM, "Open")
+    field(ONAM, "Closed")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Frequency conversion	enable				                      #
+#  1: Automatic                                                   #
+#  0: Manual                                                      #
+###################################################################
+record(bi, "$(SYS):$(SUB)::tune_loop_en_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) tune_loop_en_state")
+    field(ZNAM, "Manual")
+    field(ONAM, "Automatic")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Set point amplitude Z7					                      #
+###################################################################
+record(longin, "$(SYS):$(SUB)::o_sp_amp_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) o_sp_amp_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Set point amplitude					                          #
+###################################################################
+record(longin, "$(SYS):$(SUB)::sp_amp_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) sp_amp_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Set point phase					                              #
+###################################################################
+record(ai, "$(SYS):$(SUB)::sp_phase_state")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) sp_phase_state")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Channel 0 1-second protection count					          #
+###################################################################
+record(longin, "$(SYS):$(SUB)::s1_Ch0_PRT_Num_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) s1_Ch0_PRT_Num_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Channel 1 1-second protection count					          #
+###################################################################
+record(longin, "$(SYS):$(SUB)::s1_Ch1_PRT_Num_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) s1_Ch1_PRT_Num_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Channel 2 1-second protection count					          #
+###################################################################
+record(longin, "$(SYS):$(SUB)::s1_Ch2_PRT_Num_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) s1_Ch2_PRT_Num_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Channel 3 1-second protection count					          #
+###################################################################
+record(longin, "$(SYS):$(SUB)::s1_Ch3_PRT_Num_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) s1_Ch3_PRT_Num_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Sum of 1-second protection count					          #
+###################################################################
+record(longin, "$(SYS):$(SUB)::s1_Ch_sum_PRT_Num_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) s1_Ch_sum_PRT_Num_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Channel 0 cumulative protection count			              #
+###################################################################
+record(longin, "$(SYS):$(SUB)::Ch0_VSWR_SUM_Counter_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ch0_VSWR_SUM_Counter_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Channel 1 cumulative protection count			              #
+###################################################################
+record(longin, "$(SYS):$(SUB)::Ch1_VSWR_SUM_Counter_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ch1_VSWR_SUM_Counter_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Channel 2 cumulative protection count			              #
+###################################################################
+record(longin, "$(SYS):$(SUB)::Ch2_VSWR_SUM_Counter_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ch2_VSWR_SUM_Counter_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Channel 3 cumulative protection count			              #
+###################################################################
+record(longin, "$(SYS):$(SUB)::Ch3_VSWR_SUM_Counter_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) Ch3_VSWR_SUM_Counter_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Over power					                                  #
+###################################################################
+record(longin, "$(SYS):$(SUB)::high_Wattcher_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) high_Wattcher_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Permanent blocking					                          #
+###################################################################
+record(longin, "$(SYS):$(SUB)::VSWR_PRT_forvere_out_state")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) VSWR_PRT_forvere_out_state")
+    field(SCAN, "1 second")
+}
+
+
+###################################################################
+#  Cavity frequency calculation					                  #
+###################################################################
+record(ai, "$(SYS):$(SUB)::freq_cal_state")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) freq_cal_state")
+    field(PREC, "3")
+    field(SCAN, "1 second")
+}
+
+
+############################################################################################
+#####################################    Waveforms    ######################################
+############################################################################################
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_CAV2_amp")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_CAV2_amp")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_CAV2_phase")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_CAV2_phase")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_CAV1_amp")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_CAV1_amp")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_CAV1_phase")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_CAV1_phase")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_fwd1_amp")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_fwd1_amp")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_fwd1_phase")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_fwd1_phase")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_fwd1_power")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_fwd1_power")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_rfl1_amp")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_rfl1_amp")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_rfl1_phase")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_rfl1_phase")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_rfl1_power")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_rfl1_power")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_CAV_VSWR1")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_CAV_VSWR1")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_fwd2_amp")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_fwd2_amp")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_fwd2_phase")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_fwd2_phase")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_fwd2_power")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_fwd2_power")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_rfl2_amp")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_rfl2_amp")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_rfl2_phase")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_rfl2_phase")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_rfl2_power")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_rfl2_power")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_CAV_VSWR2")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_CAV_VSWR2")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_CAV_inpower")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_CAV_inpower")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_CAV_fwdpower")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_CAV_fwdpower")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_CAV_rflpower")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_CAV_rflpower")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_DAC_amp")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_DAC_amp")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(waveform, "$(SYS):$(SUB)::waveform_DAC_phase")
+{
+    field(DTYP, "asynFloat64ArrayIn")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_DAC_phase")
+    field(FTVL, "DOUBLE")
+    field(NELM, "4096")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+
+############################################################################################
+##########################    Waveform single point position    ############################
+############################################################################################
+
+
+record(longout, "$(SYS):$(SUB)::waveform_single_point_position")
+{
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_position")
+}
+
+record(longin, "$(SYS):$(SUB)::waveform_single_point_position-RB")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_position")
+    field(SCAN, "1 second")
+}
+
+
+############################################################################################
+##############################    Waveform single point    #################################
+############################################################################################
+
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_CAV2_amp")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_CAV2_amp")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_CAV2_phase")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_CAV2_phase")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_CAV1_amp")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_CAV1_amp")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_CAV1_phase")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_CAV1_phase")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_fwd1_amp")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_fwd1_amp")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_fwd1_phase")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_fwd1_phase")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_fwd1_power")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_fwd1_power")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_rfl1_amp")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_rfl1_amp")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_rfl1_phase")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_rfl1_phase")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_rfl1_power")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_rfl1_power")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_CAV_VSWR1")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_CAV_VSWR1")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_fwd2_amp")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_fwd2_amp")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_fwd2_phase")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_fwd2_phase")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_fwd2_power")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_fwd2_power")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_rfl2_amp")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_rfl2_amp")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_rfl2_phase")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_rfl2_phase")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_rfl2_power")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_rfl2_power")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_CAV_VSWR2")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_CAV_VSWR2")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_CAV_inpower")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_CAV_inpower")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_CAV_fwdpower")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_CAV_fwdpower")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_CAV_rflpower")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_CAV_rflpower")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_DAC_amp")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_DAC_amp")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(SYS):$(SUB)::waveform_single_point_DAC_phase")
+{
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT)) waveform_single_point_DAC_phase")
+    field(PREC, "3")
+    field(SCAN, "I/O Intr")
+}

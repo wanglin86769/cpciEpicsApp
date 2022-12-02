@@ -1,0 +1,2951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>2300</width>
+  <height>1300</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>LLRF Registers</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>190</width>
+    <height>31</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::sp_amp-RB</pv_name>
+    <x>488</x>
+    <y>6</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::sp_amp</pv_name>
+    <x>372</x>
+    <y>5</y>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::lock_en</pv_name>
+    <x>123</x>
+    <y>39</y>
+    <width>50</width>
+    <height>20</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::lock_en-RB</pv_name>
+    <x>197</x>
+    <y>39</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>lock_en</text>
+    <x>58</x>
+    <y>39</y>
+    <width>49</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button_1</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::on_off</pv_name>
+    <x>123</x>
+    <y>82</y>
+    <width>50</width>
+    <height>20</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::on_off-RB</pv_name>
+    <x>197</x>
+    <y>82</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>on_off</text>
+    <x>68</x>
+    <y>81</y>
+    <width>39</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>RF_PW_CW</text>
+    <x>26</x>
+    <y>123</y>
+    <width>81</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>loop_en</text>
+    <x>57</x>
+    <y>205</y>
+    <width>50</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button_3</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::loop_en</pv_name>
+    <x>123</x>
+    <y>205</y>
+    <width>50</width>
+    <height>20</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_3</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::loop_en-RB</pv_name>
+    <x>197</x>
+    <y>205</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>tune_loop_en</text>
+    <x>22</x>
+    <y>249</y>
+    <width>85</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button_4</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::tune_loop_en</pv_name>
+    <x>123</x>
+    <y>249</y>
+    <width>50</width>
+    <height>20</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_4</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::tune_loop_en-RB</pv_name>
+    <x>197</x>
+    <y>249</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>sp_amp</text>
+    <x>311</x>
+    <y>5</y>
+    <width>50</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::sp_phase-RB</pv_name>
+    <x>488</x>
+    <y>35</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::sp_phase</pv_name>
+    <x>372</x>
+    <y>34</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>sp_phase</text>
+    <x>300</x>
+    <y>34</y>
+    <width>61</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::beam_amp-RB</pv_name>
+    <x>488</x>
+    <y>64</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_2</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::beam_amp</pv_name>
+    <x>372</x>
+    <y>63</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>beam_amp</text>
+    <x>290</x>
+    <y>63</y>
+    <width>71</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::beam_phase-RB</pv_name>
+    <x>488</x>
+    <y>93</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_3</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::beam_phase</pv_name>
+    <x>372</x>
+    <y>92</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>beam_phase</text>
+    <x>280</x>
+    <y>92</y>
+    <width>81</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::kp-RB</pv_name>
+    <x>488</x>
+    <y>122</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_4</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::kp</pv_name>
+    <x>372</x>
+    <y>121</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>kp</text>
+    <x>346</x>
+    <y>121</y>
+    <width>15</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::ki-RB</pv_name>
+    <x>488</x>
+    <y>151</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_5</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::ki</pv_name>
+    <x>372</x>
+    <y>150</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>ki</text>
+    <x>350</x>
+    <y>150</y>
+    <width>11</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::ad_adj_real-RB</pv_name>
+    <x>488</x>
+    <y>180</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_6</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::ad_adj_real</pv_name>
+    <x>372</x>
+    <y>179</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>ad_adj_real</text>
+    <x>287</x>
+    <y>179</y>
+    <width>74</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::ad_adj_imag-RB</pv_name>
+    <x>488</x>
+    <y>209</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_7</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::ad_adj_imag</pv_name>
+    <x>372</x>
+    <y>208</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>ad_adj_imag</text>
+    <x>280</x>
+    <y>208</y>
+    <width>81</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_9</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::da_adj_real-RB</pv_name>
+    <x>488</x>
+    <y>238</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_8</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::da_adj_real</pv_name>
+    <x>372</x>
+    <y>237</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_14</name>
+    <text>da_adj_real</text>
+    <x>287</x>
+    <y>237</y>
+    <width>74</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_10</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::da_adj_imag-RB</pv_name>
+    <x>488</x>
+    <y>267</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_9</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::da_adj_imag</pv_name>
+    <x>372</x>
+    <y>266</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_15</name>
+    <text>da_adj_imag</text>
+    <x>280</x>
+    <y>266</y>
+    <width>81</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_11</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::da_adj_real2-RB</pv_name>
+    <x>488</x>
+    <y>296</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_10</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::da_adj_real2</pv_name>
+    <x>372</x>
+    <y>295</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_16</name>
+    <text>da_adj_real2</text>
+    <x>280</x>
+    <y>295</y>
+    <width>81</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_12</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::da_adj_imag2-RB</pv_name>
+    <x>488</x>
+    <y>325</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_11</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::da_adj_imag2</pv_name>
+    <x>372</x>
+    <y>324</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_17</name>
+    <text>da_adj_imag2</text>
+    <x>273</x>
+    <y>324</y>
+    <width>88</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_13</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::n_jump-RB</pv_name>
+    <x>488</x>
+    <y>354</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_12</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::n_jump</pv_name>
+    <x>372</x>
+    <y>353</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_18</name>
+    <text>n_jump</text>
+    <x>315</x>
+    <y>353</y>
+    <width>46</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_14</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::n_jump_delay-RB</pv_name>
+    <x>488</x>
+    <y>383</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_13</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::n_jump_delay</pv_name>
+    <x>372</x>
+    <y>382</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_19</name>
+    <text>n_jump_delay</text>
+    <x>273</x>
+    <y>382</y>
+    <width>88</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_15</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::start_cnt-RB</pv_name>
+    <x>488</x>
+    <y>412</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_14</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::start_cnt</pv_name>
+    <x>372</x>
+    <y>411</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_20</name>
+    <text>start_cnt</text>
+    <x>307</x>
+    <y>411</y>
+    <width>54</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_16</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::end_cnt-RB</pv_name>
+    <x>488</x>
+    <y>441</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_15</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::end_cnt</pv_name>
+    <x>372</x>
+    <y>440</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_21</name>
+    <text>end_cnt</text>
+    <x>311</x>
+    <y>440</y>
+    <width>50</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_17</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Out_max_I-RB</pv_name>
+    <x>488</x>
+    <y>470</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_16</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Out_max_I</pv_name>
+    <x>372</x>
+    <y>469</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_22</name>
+    <text>Out_max_I</text>
+    <x>292</x>
+    <y>469</y>
+    <width>69</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_18</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Out_min_I-RB</pv_name>
+    <x>488</x>
+    <y>499</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_17</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Out_min_I</pv_name>
+    <x>372</x>
+    <y>498</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_23</name>
+    <text>Out_min_I</text>
+    <x>296</x>
+    <y>498</y>
+    <width>65</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_19</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Out_max_Q-RB</pv_name>
+    <x>488</x>
+    <y>528</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_18</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Out_max_Q</pv_name>
+    <x>372</x>
+    <y>527</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_24</name>
+    <text>Out_max_Q</text>
+    <x>285</x>
+    <y>527</y>
+    <width>76</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_20</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Out_min_Q-RB</pv_name>
+    <x>488</x>
+    <y>558</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_19</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Out_min_Q</pv_name>
+    <x>372</x>
+    <y>557</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_25</name>
+    <text>Out_min_Q</text>
+    <x>289</x>
+    <y>557</y>
+    <width>72</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_20</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::beam_delay</pv_name>
+    <x>759</x>
+    <y>179</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_26</name>
+    <text>beam_delay</text>
+    <x>670</x>
+    <y>179</y>
+    <width>77</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_21</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::rfgate_ram_jiange-RB</pv_name>
+    <x>875</x>
+    <y>209</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_21</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::rfgate_ram_jiange</pv_name>
+    <x>759</x>
+    <y>208</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_27</name>
+    <text>rfgate_ram_jiange</text>
+    <x>634</x>
+    <y>208</y>
+    <width>113</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_22</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Qset-RB</pv_name>
+    <x>875</x>
+    <y>238</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_22</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Qset</pv_name>
+    <x>759</x>
+    <y>237</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_28</name>
+    <text>Qset</text>
+    <x>717</x>
+    <y>237</y>
+    <width>30</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_23</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Overdrive-RB</pv_name>
+    <x>875</x>
+    <y>267</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_23</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Overdrive</pv_name>
+    <x>759</x>
+    <y>266</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_29</name>
+    <text>Overdrive</text>
+    <x>686</x>
+    <y>266</y>
+    <width>61</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_24</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::triger_period-RB</pv_name>
+    <x>875</x>
+    <y>296</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_24</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::triger_period</pv_name>
+    <x>759</x>
+    <y>295</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_30</name>
+    <text>train_mode</text>
+    <x>36</x>
+    <y>297</y>
+    <width>71</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_25</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::RF_count-RB</pv_name>
+    <x>875</x>
+    <y>325</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_25</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::RF_count</pv_name>
+    <x>759</x>
+    <y>324</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_31</name>
+    <text>trigger_src</text>
+    <x>40</x>
+    <y>386</y>
+    <width>67</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_26</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::init_set-RB</pv_name>
+    <x>875</x>
+    <y>354</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_26</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::init_set</pv_name>
+    <x>759</x>
+    <y>353</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_32</name>
+    <text>trigger_period</text>
+    <x>660</x>
+    <y>298</y>
+    <width>87</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_27</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::end_set-RB</pv_name>
+    <x>875</x>
+    <y>383</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_27</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::end_set</pv_name>
+    <x>759</x>
+    <y>382</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_33</name>
+    <text>RF_count</text>
+    <x>686</x>
+    <y>327</y>
+    <width>61</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_28</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powup_time-RB</pv_name>
+    <x>875</x>
+    <y>412</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_28</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powup_time</pv_name>
+    <x>759</x>
+    <y>411</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_34</name>
+    <text>init_set</text>
+    <x>702</x>
+    <y>356</y>
+    <width>45</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_29</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powup_step-RB</pv_name>
+    <x>875</x>
+    <y>441</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_29</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powup_step</pv_name>
+    <x>759</x>
+    <y>440</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_35</name>
+    <text>end_set</text>
+    <x>697</x>
+    <y>385</y>
+    <width>50</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_30</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powup_hold_time-RB</pv_name>
+    <x>875</x>
+    <y>470</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_30</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powup_hold_time</pv_name>
+    <x>759</x>
+    <y>469</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_36</name>
+    <text>powerup_time</text>
+    <x>659</x>
+    <y>414</y>
+    <width>88</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_31</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powup_protect_times-RB</pv_name>
+    <x>875</x>
+    <y>499</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_31</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powup_protect_times</pv_name>
+    <x>759</x>
+    <y>498</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_37</name>
+    <text>powerup_step</text>
+    <x>659</x>
+    <y>443</y>
+    <width>88</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_32</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powdown_time-RB</pv_name>
+    <x>875</x>
+    <y>529</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_32</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powdown_time</pv_name>
+    <x>759</x>
+    <y>528</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_38</name>
+    <text>powerup_hold_time</text>
+    <x>624</x>
+    <y>473</y>
+    <width>123</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_33</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::sp_freq-RB</pv_name>
+    <x>488</x>
+    <y>585</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_33</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::sp_freq</pv_name>
+    <x>372</x>
+    <y>584</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_39</name>
+    <text>sp_freq</text>
+    <x>313</x>
+    <y>584</y>
+    <width>47</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_34</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Loop_Delay_count-RB</pv_name>
+    <x>875</x>
+    <y>6</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_34</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Loop_Delay_count</pv_name>
+    <x>759</x>
+    <y>5</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_40</name>
+    <text>Loop_Delay_count</text>
+    <x>630</x>
+    <y>5</y>
+    <width>117</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_35</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Kip_start_point-RB</pv_name>
+    <x>875</x>
+    <y>35</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_35</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Kip_start_point</pv_name>
+    <x>759</x>
+    <y>34</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_41</name>
+    <text>Kip_start_point</text>
+    <x>653</x>
+    <y>34</y>
+    <width>94</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_36</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Kip_end_point-RB</pv_name>
+    <x>875</x>
+    <y>64</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_36</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Kip_end_point</pv_name>
+    <x>759</x>
+    <y>63</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_42</name>
+    <text>Kip_end_point</text>
+    <x>657</x>
+    <y>63</y>
+    <width>90</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_37</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ki_I_rise_point-RB</pv_name>
+    <x>875</x>
+    <y>93</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_37</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ki_I_rise_point</pv_name>
+    <x>759</x>
+    <y>92</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_43</name>
+    <text>Ki_I_rise_point</text>
+    <x>654</x>
+    <y>92</y>
+    <width>93</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_38</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ki_Q_rise_point-RB</pv_name>
+    <x>875</x>
+    <y>122</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_38</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ki_Q_rise_point</pv_name>
+    <x>759</x>
+    <y>121</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_44</name>
+    <text>Ki_Q_rise_point</text>
+    <x>647</x>
+    <y>121</y>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_39</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::freq_kp-RB</pv_name>
+    <x>875</x>
+    <y>151</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_39</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::freq_kp</pv_name>
+    <x>759</x>
+    <y>150</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_45</name>
+    <text>freq_kp</text>
+    <x>700</x>
+    <y>150</y>
+    <width>47</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_40</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::beam_delay-RB</pv_name>
+    <x>875</x>
+    <y>180</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_40</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::SP_P_2</pv_name>
+    <x>1172</x>
+    <y>150</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_46</name>
+    <text>SP_P</text>
+    <x>1121</x>
+    <y>94</y>
+    <width>36</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_41</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::SP_P_3-RB</pv_name>
+    <x>1288</x>
+    <y>180</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_41</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::SP_P_3</pv_name>
+    <x>1172</x>
+    <y>179</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_47</name>
+    <text>SP_P_1</text>
+    <x>1105</x>
+    <y>123</y>
+    <width>52</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_42</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ch_beam_Hold-RB</pv_name>
+    <x>1288</x>
+    <y>209</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_42</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ch_beam_Hold</pv_name>
+    <x>1172</x>
+    <y>208</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_48</name>
+    <text>SP_P_2</text>
+    <x>1105</x>
+    <y>152</y>
+    <width>52</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_43</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ch_VSWR_Hold-RB</pv_name>
+    <x>1288</x>
+    <y>238</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_43</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ch_VSWR_Hold</pv_name>
+    <x>1172</x>
+    <y>237</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_49</name>
+    <text>SP_P_3</text>
+    <x>1105</x>
+    <y>181</y>
+    <width>52</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_44</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::SP_Ch_sum_PRT_Num-RB</pv_name>
+    <x>1288</x>
+    <y>267</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_44</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::SP_Ch_sum_PRT_Num</pv_name>
+    <x>1172</x>
+    <y>266</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_50</name>
+    <text>Ch_beam_Hold</text>
+    <x>1059</x>
+    <y>210</y>
+    <width>98</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_45</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::VSWR_Delay_Num-RB</pv_name>
+    <x>1288</x>
+    <y>296</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_45</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::VSWR_Delay_Num</pv_name>
+    <x>1172</x>
+    <y>295</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_51</name>
+    <text>Ch_VSWR_Hold</text>
+    <x>1052</x>
+    <y>239</y>
+    <width>105</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_46</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k0_forward-RB</pv_name>
+    <x>1288</x>
+    <y>325</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_46</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k0_forward</pv_name>
+    <x>1172</x>
+    <y>324</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_52</name>
+    <text>SP_Ch_sum_PRT_Num</text>
+    <x>1005</x>
+    <y>268</y>
+    <width>152</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_47</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k0_reverse-RB</pv_name>
+    <x>1288</x>
+    <y>354</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_47</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k0_reverse</pv_name>
+    <x>1172</x>
+    <y>353</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_53</name>
+    <text>k0_reverse</text>
+    <x>1087</x>
+    <y>355</y>
+    <width>70</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_48</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k1_forward-RB</pv_name>
+    <x>1288</x>
+    <y>383</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_48</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k1_forward</pv_name>
+    <x>1172</x>
+    <y>382</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_54</name>
+    <text>k1_forward</text>
+    <x>1087</x>
+    <y>384</y>
+    <width>70</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_49</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k1_reverse-RB</pv_name>
+    <x>1288</x>
+    <y>412</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_49</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k1_reverse</pv_name>
+    <x>1172</x>
+    <y>411</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_55</name>
+    <text>k1_reverse</text>
+    <x>1087</x>
+    <y>413</y>
+    <width>70</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_50</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k2_forward-RB</pv_name>
+    <x>1288</x>
+    <y>441</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_50</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k2_forward</pv_name>
+    <x>1172</x>
+    <y>440</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_56</name>
+    <text>k2_forward</text>
+    <x>1088</x>
+    <y>442</y>
+    <width>70</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_51</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k2_reverse-RB</pv_name>
+    <x>1288</x>
+    <y>470</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_51</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k2_reverse</pv_name>
+    <x>1172</x>
+    <y>469</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_57</name>
+    <text>k2_reverse</text>
+    <x>1087</x>
+    <y>471</y>
+    <width>70</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_52</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k3_forward-RB</pv_name>
+    <x>1288</x>
+    <y>500</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_52</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k3_forward</pv_name>
+    <x>1172</x>
+    <y>499</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_58</name>
+    <text>k3_forward</text>
+    <x>1087</x>
+    <y>501</y>
+    <width>70</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_53</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powdown_step-RB</pv_name>
+    <x>875</x>
+    <y>559</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_53</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powdown_step</pv_name>
+    <x>759</x>
+    <y>558</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_59</name>
+    <text>powerup_protect_times</text>
+    <x>601</x>
+    <y>500</y>
+    <width>146</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_54</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powdown_hold_time-RB</pv_name>
+    <x>875</x>
+    <y>588</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_54</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powdown_hold_time</pv_name>
+    <x>759</x>
+    <y>587</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_60</name>
+    <text>powerdown_time</text>
+    <x>641</x>
+    <y>528</y>
+    <width>106</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_55</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powdown_protect_times-RB</pv_name>
+    <x>1288</x>
+    <y>6</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_55</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::powdown_protect_times</pv_name>
+    <x>1172</x>
+    <y>5</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_61</name>
+    <text>powerdown_step</text>
+    <x>641</x>
+    <y>560</y>
+    <width>106</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_56</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::PRT_Start_count-RB</pv_name>
+    <x>1288</x>
+    <y>35</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_56</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::PRT_Start_count</pv_name>
+    <x>1172</x>
+    <y>34</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_62</name>
+    <text>powerdown_hold_time</text>
+    <x>606</x>
+    <y>589</y>
+    <width>141</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_57</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::PRT_End_count-RB</pv_name>
+    <x>1288</x>
+    <y>64</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_57</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::PRT_End_count</pv_name>
+    <x>1172</x>
+    <y>63</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_63</name>
+    <text>powerdown_protect_times</text>
+    <x>993</x>
+    <y>7</y>
+    <width>164</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_58</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::SP_P-RB</pv_name>
+    <x>1288</x>
+    <y>93</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_58</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::SP_P</pv_name>
+    <x>1172</x>
+    <y>92</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_64</name>
+    <text>PRT_Start_count</text>
+    <x>1049</x>
+    <y>36</y>
+    <width>108</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_59</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::SP_P_1-RB</pv_name>
+    <x>1288</x>
+    <y>122</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_59</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::SP_P_1</pv_name>
+    <x>1172</x>
+    <y>121</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_65</name>
+    <text>PRT_End_count</text>
+    <x>1054</x>
+    <y>65</y>
+    <width>103</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_60</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::SP_P_2-RB</pv_name>
+    <x>1288</x>
+    <y>151</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_66</name>
+    <text>sp_amp_state</text>
+    <x>1534</x>
+    <y>152</y>
+    <width>88</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_61</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::sp_phase_state</pv_name>
+    <x>1633</x>
+    <y>179</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_67</name>
+    <text>sp_phase_state</text>
+    <x>1523</x>
+    <y>181</y>
+    <width>99</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_62</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::s1_Ch0_PRT_Num_state</pv_name>
+    <x>1633</x>
+    <y>208</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_68</name>
+    <text>s1_Ch0_PRT_Num_state</text>
+    <x>1465</x>
+    <y>210</y>
+    <width>160</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_63</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::s1_Ch1_PRT_Num_state</pv_name>
+    <x>1633</x>
+    <y>237</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_69</name>
+    <text>s1_Ch1_PRT_Num_state</text>
+    <x>1465</x>
+    <y>239</y>
+    <width>160</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_64</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::s1_Ch2_PRT_Num_state</pv_name>
+    <x>1633</x>
+    <y>266</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_70</name>
+    <text>s1_Ch2_PRT_Num_state</text>
+    <x>1465</x>
+    <y>268</y>
+    <width>160</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_65</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::s1_Ch3_PRT_Num_state</pv_name>
+    <x>1633</x>
+    <y>295</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_71</name>
+    <text>s1_Ch3_PRT_Num_state</text>
+    <x>1465</x>
+    <y>297</y>
+    <width>160</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_66</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::s1_Ch_sum_PRT_Num_state</pv_name>
+    <x>1633</x>
+    <y>324</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_72</name>
+    <text>s1_Ch_sum_PRT_Num_state</text>
+    <x>1439</x>
+    <y>326</y>
+    <width>186</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_67</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ch0_VSWR_SUM_Counter_state</pv_name>
+    <x>1633</x>
+    <y>353</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_73</name>
+    <text>Ch0_VSWR_SUM_Counter_state</text>
+    <x>1411</x>
+    <y>355</y>
+    <width>211</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_68</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ch1_VSWR_SUM_Counter_state</pv_name>
+    <x>1633</x>
+    <y>382</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_74</name>
+    <text>Ch1_VSWR_SUM_Counter_state</text>
+    <x>1411</x>
+    <y>384</y>
+    <width>211</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_69</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ch2_VSWR_SUM_Counter_state</pv_name>
+    <x>1633</x>
+    <y>411</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_75</name>
+    <text>Ch2_VSWR_SUM_Counter_state</text>
+    <x>1411</x>
+    <y>413</y>
+    <width>211</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_70</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::Ch3_VSWR_SUM_Counter_state</pv_name>
+    <x>1633</x>
+    <y>440</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_76</name>
+    <text>Ch3_VSWR_SUM_Counter_state</text>
+    <x>1411</x>
+    <y>442</y>
+    <width>211</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_71</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::high_Wattcher_state</pv_name>
+    <x>1633</x>
+    <y>469</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_77</name>
+    <text>high_Wattcher_state</text>
+    <x>1493</x>
+    <y>471</y>
+    <width>129</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_72</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::VSWR_PRT_forvere_out_state</pv_name>
+    <x>1633</x>
+    <y>499</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_78</name>
+    <text>VSWR_PRT_forever_out_state</text>
+    <x>1427</x>
+    <y>501</y>
+    <width>195</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_73</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k3_reverse-RB</pv_name>
+    <x>1287</x>
+    <y>529</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_73</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::k3_reverse</pv_name>
+    <x>1171</x>
+    <y>528</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_79</name>
+    <text>k3_reverse</text>
+    <x>1085</x>
+    <y>530</y>
+    <width>70</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_75</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::lock_en_state</pv_name>
+    <x>1633</x>
+    <y>5</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_81</name>
+    <text>lock_en_state</text>
+    <x>1535</x>
+    <y>7</y>
+    <width>87</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_76</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::on_off_state</pv_name>
+    <x>1633</x>
+    <y>34</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_82</name>
+    <text>on_off_state</text>
+    <x>1544</x>
+    <y>36</y>
+    <width>78</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_77</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::loop_en_state</pv_name>
+    <x>1633</x>
+    <y>63</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_83</name>
+    <text>loop_en_state</text>
+    <x>1534</x>
+    <y>65</y>
+    <width>88</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_78</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::tune_loop_en_state</pv_name>
+    <x>1633</x>
+    <y>92</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_84</name>
+    <text>tune_loop_en_state</text>
+    <x>1499</x>
+    <y>94</y>
+    <width>123</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_79</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::o_sp_amp_state</pv_name>
+    <x>1633</x>
+    <y>121</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_85</name>
+    <text>o_sp_amp_state</text>
+    <x>1518</x>
+    <y>123</y>
+    <width>104</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_80</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::sp_amp_state</pv_name>
+    <x>1633</x>
+    <y>150</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_86</name>
+    <text>manual_Clear</text>
+    <x>19</x>
+    <y>471</y>
+    <width>88</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_87</name>
+    <text>VSWR_EN</text>
+    <x>37</x>
+    <y>526</y>
+    <width>70</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_88</name>
+    <text>VSWR_Delay_Num</text>
+    <x>1034</x>
+    <y>297</y>
+    <width>123</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_89</name>
+    <text>k0_forward</text>
+    <x>1087</x>
+    <y>326</y>
+    <width>70</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_90</name>
+    <text>freq_cal_state</text>
+    <x>1534</x>
+    <y>528</y>
+    <width>88</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_81</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::freq_cal_state</pv_name>
+    <x>1633</x>
+    <y>526</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_82</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::train_mode-RB</pv_name>
+    <x>123</x>
+    <y>335</y>
+    <width>130</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_91</name>
+    <text>waveform_single_point_position</text>
+    <x>1802</x>
+    <y>4</y>
+    <width>218</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_63</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_position</pv_name>
+    <x>2040</x>
+    <y>2</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_86</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_CAV2_amp</pv_name>
+    <x>1893</x>
+    <y>47</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_92</name>
+    <text>CAV2_amp</text>
+    <x>1803</x>
+    <y>49</y>
+    <width>72</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_87</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_CAV2_phase</pv_name>
+    <x>1893</x>
+    <y>77</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_93</name>
+    <text>CAV2_phase</text>
+    <x>1792</x>
+    <y>79</y>
+    <width>83</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_88</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_CAV1_amp</pv_name>
+    <x>1893</x>
+    <y>107</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_94</name>
+    <text>CAV1_amp</text>
+    <x>1803</x>
+    <y>109</y>
+    <width>72</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_89</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_CAV1_phase</pv_name>
+    <x>1893</x>
+    <y>137</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_95</name>
+    <text>CAV1_phase</text>
+    <x>1792</x>
+    <y>139</y>
+    <width>83</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_90</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_fwd1_amp</pv_name>
+    <x>1893</x>
+    <y>167</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_96</name>
+    <text>fwd1_amp</text>
+    <x>1810</x>
+    <y>169</y>
+    <width>65</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_91</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_fwd1_phase</pv_name>
+    <x>1893</x>
+    <y>197</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_97</name>
+    <text>fwd1_phase</text>
+    <x>1799</x>
+    <y>199</y>
+    <width>76</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_92</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_fwd1_power</pv_name>
+    <x>1893</x>
+    <y>227</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_98</name>
+    <text>fwd1_power</text>
+    <x>1799</x>
+    <y>229</y>
+    <width>76</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_93</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_rfl1_amp</pv_name>
+    <x>1893</x>
+    <y>257</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_99</name>
+    <text>rfl1_amp</text>
+    <x>1820</x>
+    <y>259</y>
+    <width>55</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_94</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_rfl1_phase</pv_name>
+    <x>1893</x>
+    <y>287</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_100</name>
+    <text>rfl1_phase</text>
+    <x>1809</x>
+    <y>289</y>
+    <width>66</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_95</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_rfl1_power</pv_name>
+    <x>1893</x>
+    <y>317</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_101</name>
+    <text>rfl1_power</text>
+    <x>1809</x>
+    <y>319</y>
+    <width>66</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_96</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_CAV_VSWR1</pv_name>
+    <x>1893</x>
+    <y>347</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_102</name>
+    <text>CAV_VSWR1</text>
+    <x>1788</x>
+    <y>349</y>
+    <width>87</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_97</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_fwd2_amp</pv_name>
+    <x>1893</x>
+    <y>381</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_103</name>
+    <text>fwd2_amp</text>
+    <x>1810</x>
+    <y>381</y>
+    <width>65</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_98</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_fwd2_phase</pv_name>
+    <x>2155</x>
+    <y>47</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_104</name>
+    <text>fwd2_phase</text>
+    <x>2064</x>
+    <y>49</y>
+    <width>76</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_99</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_fwd2_power</pv_name>
+    <x>2155</x>
+    <y>80</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_105</name>
+    <text>fwd2_power</text>
+    <x>2064</x>
+    <y>82</y>
+    <width>76</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_100</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_rfl2_amp</pv_name>
+    <x>2155</x>
+    <y>113</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_106</name>
+    <text>rfl2_amp</text>
+    <x>2085</x>
+    <y>115</y>
+    <width>55</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_101</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_rfl2_phase</pv_name>
+    <x>2155</x>
+    <y>146</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_107</name>
+    <text>rfl2_phase</text>
+    <x>2074</x>
+    <y>148</y>
+    <width>66</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_102</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_rfl2_power</pv_name>
+    <x>2155</x>
+    <y>179</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_108</name>
+    <text>rfl2_power</text>
+    <x>2074</x>
+    <y>181</y>
+    <width>66</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_103</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_CAV_VSWR2</pv_name>
+    <x>2155</x>
+    <y>212</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_109</name>
+    <text>CAV_VSWR2</text>
+    <x>2053</x>
+    <y>214</y>
+    <width>87</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_104</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_CAV_inpower</pv_name>
+    <x>2155</x>
+    <y>245</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_110</name>
+    <text>CAV_inpower</text>
+    <x>2054</x>
+    <y>247</y>
+    <width>86</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_105</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_CAV_fwdpower</pv_name>
+    <x>2155</x>
+    <y>278</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_111</name>
+    <text>CAV_fwdpower</text>
+    <x>2043</x>
+    <y>280</y>
+    <width>97</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_106</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_CAV_rflpower</pv_name>
+    <x>2155</x>
+    <y>311</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_112</name>
+    <text>CAV_rflpower</text>
+    <x>2053</x>
+    <y>313</y>
+    <width>87</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_107</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_DAC_amp</pv_name>
+    <x>2155</x>
+    <y>344</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_113</name>
+    <text>DAC_amp</text>
+    <x>2075</x>
+    <y>346</y>
+    <width>65</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_108</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_DAC_phase</pv_name>
+    <x>2155</x>
+    <y>381</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_114</name>
+    <text>DAC_phase</text>
+    <x>2064</x>
+    <y>381</y>
+    <width>76</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_85</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::waveform_single_point_position-RB</pv_name>
+    <x>2154</x>
+    <y>3</y>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button</name>
+    <x>2324</x>
+    <y>190</y>
+    <width>1</width>
+    <height>1</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box_1</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::RF_PW_CW</pv_name>
+    <x>123</x>
+    <y>117</y>
+    <width>130</width>
+    <height>27</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_109</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::RF_PW_CW-RB</pv_name>
+    <x>123</x>
+    <y>161</y>
+    <width>130</width>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box_2</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::train_mode</pv_name>
+    <x>123</x>
+    <y>291</y>
+    <width>130</width>
+    <height>27</height>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box_3</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::triger_src</pv_name>
+    <x>123</x>
+    <y>381</y>
+    <width>130</width>
+    <height>27</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_110</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::triger_src-RB</pv_name>
+    <x>123</x>
+    <y>431</y>
+    <width>130</width>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box_4</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::VSWR_EN</pv_name>
+    <x>123</x>
+    <y>518</y>
+    <width>130</width>
+    <height>27</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_111</name>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::VSWR_EN-RB</pv_name>
+    <x>123</x>
+    <y>562</y>
+    <width>130</width>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Clear</description>
+      </action>
+    </actions>
+    <pv_name>FACILITY1_ACC_LRF:LLRF::manual_Clear</pv_name>
+    <x>123</x>
+    <y>468</y>
+    <width>130</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>X/Y Plot</name>
+    <y>630</y>
+    <width>450</width>
+    <height>550</height>
+    <show_toolbar>true</show_toolbar>
+    <x_axis>
+      <title>X</title>
+      <autoscale>false</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>4096.0</maximum>
+      <show_grid>false</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>Y</title>
+        <autoscale>false</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>10000.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_CAV2_amp</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_CAV1_amp</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="255" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[2].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_fwd1_amp</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="255" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[3].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_rfl1_amp</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="170" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[4].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_fwd2_amp</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="255" green="255" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[5].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_rfl2_amp</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="234" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[6].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_DAC_amp</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="255" green="127" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>X/Y Plot_3</name>
+    <x>1465</x>
+    <y>630</y>
+    <width>450</width>
+    <height>550</height>
+    <show_toolbar>true</show_toolbar>
+    <x_axis>
+      <title>X</title>
+      <autoscale>false</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>4096.0</maximum>
+      <show_grid>false</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_CAV_VSWR1</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_CAV_VSWR2</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="255" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>X/Y Plot_4</name>
+    <x>488</x>
+    <y>630</y>
+    <width>450</width>
+    <height>550</height>
+    <show_toolbar>true</show_toolbar>
+    <x_axis>
+      <title>X</title>
+      <autoscale>false</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>4096.0</maximum>
+      <show_grid>false</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>Y</title>
+        <autoscale>false</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>-200.0</minimum>
+        <maximum>200.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_CAV2_phase</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_CAV1_phase</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="255" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[2].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_fwd1_phase</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="255" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[3].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_rfl1_phase</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="170" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[4].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_fwd2_phase</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="255" green="255" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[5].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_rfl2_phase</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="234" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[6].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_DAC_phase</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="255" green="127" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>X/Y Plot_5</name>
+    <x>975</x>
+    <y>630</y>
+    <width>450</width>
+    <height>550</height>
+    <show_toolbar>true</show_toolbar>
+    <x_axis>
+      <title>X</title>
+      <autoscale>false</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>4096.0</maximum>
+      <show_grid>false</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>Y</title>
+        <autoscale>false</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>200.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_fwd1_power</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_rfl1_power</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="255" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[2].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_fwd2_power</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="255" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[3].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_rfl2_power</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="170" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[4].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_CAV_inpower</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="255" green="255" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[5].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_CAV_fwdpower</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="234" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[6].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>FACILITY1_ACC_LRF:LLRF::waveform_CAV_rflpower</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="255" green="127" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_80</name>
+    <text>Cavity_water_PRT</text>
+    <x>2076</x>
+    <y>514</y>
+    <width>117</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::Cavity_water_PRT</pv_name>
+    <x>2217</x>
+    <y>514</y>
+    <off_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_115</name>
+    <text>Cavity_vacc1_PRT</text>
+    <x>2073</x>
+    <y>550</y>
+    <width>120</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_5</name>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::Cavity_vacc1_PRT</pv_name>
+    <x>2217</x>
+    <y>550</y>
+    <off_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_116</name>
+    <text>Cavity_vacc2_PRT</text>
+    <x>2073</x>
+    <y>586</y>
+    <width>120</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_6</name>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::Cavity_vacc2_PRT</pv_name>
+    <x>2217</x>
+    <y>586</y>
+    <off_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_117</name>
+    <text>PPS_PRT</text>
+    <x>2129</x>
+    <y>622</y>
+    <width>64</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_7</name>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::PPS_PRT</pv_name>
+    <x>2217</x>
+    <y>622</y>
+    <off_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_118</name>
+    <text>SSA1_interlock</text>
+    <x>2097</x>
+    <y>658</y>
+    <width>96</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_8</name>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::SSA1_interlock</pv_name>
+    <x>2217</x>
+    <y>658</y>
+    <off_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_119</name>
+    <text>SSA2_interlock</text>
+    <x>2097</x>
+    <y>694</y>
+    <width>96</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_9</name>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::SSA2_interlock</pv_name>
+    <x>2217</x>
+    <y>694</y>
+    <off_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_120</name>
+    <text>Interlock_from_llrf</text>
+    <x>2081</x>
+    <y>730</y>
+    <width>112</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_10</name>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::Interlock_from_llrf</pv_name>
+    <x>2217</x>
+    <y>730</y>
+    <off_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_121</name>
+    <text>Interlock_to_llrf</text>
+    <x>2098</x>
+    <y>766</y>
+    <width>95</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_11</name>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::Interlock_to_llrf</pv_name>
+    <x>2217</x>
+    <y>766</y>
+    <off_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_122</name>
+    <text>Interlock_to_ACCFPS</text>
+    <x>2056</x>
+    <y>802</y>
+    <width>137</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_12</name>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::Interlock_to_ACCFPS</pv_name>
+    <x>2217</x>
+    <y>802</y>
+    <off_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_123</name>
+    <text>beampower_to_ACCFPS</text>
+    <x>2035</x>
+    <y>845</y>
+    <width>158</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_13</name>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::beampower_to_ACCFPS</pv_name>
+    <x>2217</x>
+    <y>844</y>
+    <off_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_124</name>
+    <text>Interlock reset</text>
+    <x>2047</x>
+    <y>473</y>
+    <width>88</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>reset</description>
+      </action>
+    </actions>
+    <pv_name>FACILITY1_ACC_LRF:RFFPS::reset</pv_name>
+    <x>2151</x>
+    <y>465</y>
+    <width>130</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>
