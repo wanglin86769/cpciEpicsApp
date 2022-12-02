@@ -4,7 +4,7 @@ This is an EPICS IOC developed for the LLRF system of a small-scale accelerator 
 
 ## Use case
 
-This example is only useful for simple customized PCI devices that does not need interrupt and DMA, and only one MMIO (Memory mapped I/O) BAR in used to access the FPGA registers.
+This example is only useful for simple customized PCI devices that does not need interrupt and DMA, and only one MMIO (Memory mapped I/O) BAR is used to access the FPGA registers.
 
 ## Hardware platform
 
