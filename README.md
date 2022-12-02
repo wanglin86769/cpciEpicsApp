@@ -25,7 +25,7 @@ This example is only useful for simple customized PCI devices that does not need
 
 ### Requirement
 
-The requirement for the LLRF board merely includes register access and waveform read, the update period of waveforms is 1 second. Therefore, no interrupt or DMA is need. For part of the registers, a conversion formula is needed on the IOC side.
+The requirement for the LLRF board merely includes register access and waveform read, the update period of waveforms is 1 second. Therefore, no interrupt or DMA is needed. For part of the registers, a conversion formula is needed on the IOC side.
 
 ### Software/hardware interface definition
 
